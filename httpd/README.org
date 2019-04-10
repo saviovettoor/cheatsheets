@@ -7,9 +7,9 @@
 | Useragent or Client IP 			      | =RemoteIPHeader=				                                                              |
 | Declare client intranet IP		    | =RemoteIPInternalProxy=															                                  |
 | Set Error Log Format				      | =ErrorLogFormat=																	                                    |
-| Error Log Rotate (1 min)  		    | =ErrorLog "\|/usr/sbin/rotatelogs /var/log/error_domain.%d-%m-%Y-%H_%M_%S.log 60"=    |
+| Error Log Rotate (1 min)  		    | =ErrorLog "/usr/sbin/rotatelogs /var/log/error_domain.%d-%m-%Y-%H_%M_%S.log 60"=      |
 | Sett Access Log Format			      | =LogFormat=																		                                        |
-| Access Log Rotate (1 min) 		    | =CustomLog "\|/usr/sbin/rotatelogs /var/log/%Y%m%d%H%M_access_domain.com.log 60"=	    |
+| Access Log Rotate (1 min) 		    | =CustomLog "/usr/sbin/rotatelogs /var/log/%Y%m%d%H%M_access_domain.com.log 60"=	      |
 | serve prxy pass from prxy server  | =ProxyPass /myfile.html !=														                                |
 | Only allow access from specific IP| =Order Deny,Allow= =Deny from all= =Allow from 10.12.12.1=						                |
 | Turn on the rewrite engine		    | =RewriteEngine On=																                                    |
