@@ -45,3 +45,13 @@ Lisa FNR=5 NR=10
 *NR    Retrieves total count of processed records.
 *FNR     The record which is processed.
 ```
+```
+Disable or lock user account
+  passwd -l username
+Disable user account by setting expiry date
+  usermod -e yyyy-mm-dd username
+		 	or
+		chage -E yyyy-mm-dd username
+Setting user shell to /sbin/nologin so that he can not login to the machine
+		usermod -s /sbin/nologin username
+```
